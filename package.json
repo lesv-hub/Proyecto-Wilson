@@ -3,9 +3,11 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "scripts": {
-    "test:bdd": "cucumber-js"
-  },
+ "scripts": {
+  "test:bdd": "cucumber-js",
+  "test:ui": "playwright test",
+  "test:all": "npm run test:bdd && npm run test:ui"
+},
   "keywords": [],
   "author": "",
   "license": "ISC",
